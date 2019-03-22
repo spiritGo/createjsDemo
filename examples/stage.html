@@ -1,0 +1,33 @@
+<!-- alphaMapFilter.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../lib/easeljs.js"></script>
+    <style>
+    	#canvas {
+    		width: 100%;
+    		height: 100%;
+    	}
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+    var stage = new createjs.Stage("canvas");
+    var image = new createjs.Bitmap("../images/1.jpg");
+    stage.addChild(image);
+    
+    createjs.Ticker.addEventListener("tick", handleTick);
+
+    function handleTick(event) {
+        image.x += 10;
+        stage.update();
+    }
+    </script>
+</body>
+
+</html>

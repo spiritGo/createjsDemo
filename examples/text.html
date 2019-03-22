@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../lib/easeljs.js"></script>
+	
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<script type="text/javascript">
+
+		var stage =new createjs.Stage("canvas");
+		var text = new createjs.Text("hello world","20px arial","#ff7700");
+		text.x = 100; 
+		text.y = 100;
+		stage.addChild(text);
+		stage.update();
+	</script>
+</body>
+</html>

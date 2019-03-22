@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hello easeljs</title>
+	<script src="../lib/easeljs.js"></script>
+</head>
+<body>
+	<canvas id="demoCanvas"></canvas>
+	<script>
+		var stage = new createjs.Stage("demoCanvas");
+		var circle = new createjs.Shape();
+		circle.graphics.beginFill("red").drawCircle(100,100,40);
+		stage.addChild(circle)
+		stage.update();
+	</script>
+</body>
+</html>

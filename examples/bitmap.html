@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../lib/easeljs.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+    let stage = new createjs.Stage("canvas");
+    var bg = new createjs.Bitmap("../images/2.jpg");
+    stage.addChild(bg);
+    createjs.Ticker.addEventListener("tick", handleClick);
+
+    function handleClick(e) {
+        bg.x = 1;
+        console.log(bg.x)
+        stage.update();
+    }
+    </script>
+</body>
+
+</html>
